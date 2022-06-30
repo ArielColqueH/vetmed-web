@@ -1,0 +1,52 @@
+$izi-color-primary: #5558f9;
+$izi-color-primary--darken: #484be0;
+
+// ----- SECONDARY / SUCCESS -----
+$izi-color-secondary: #02b680;
+$izi-color-secondary--darken: #03a373;
+$izi-color-secondary--lighten: #d3f0e1;
+$izi-color-secondary--lighten-60: #e5f6ed;
+
+// ----- WARM -----
+$izi-color-warm: #a29dbd;
+$izi-color-warm--lighten: #c7c4d7;
+
+// ----- NEUTRAL -----
+$izi-color-dark: #1f1e3c;
+$izi-color-white: #ffffff;
+
+// ----- DARK GREY -----
+$izi-color-darkgrey: #4f4f61;
+$izi-color-darkgrey--85: #696979;
+
+// ----- GREY -----
+$izi-color-grey: #8f96a6;
+$izi-color-grey--55: #c1c4ce;
+$izi-color-grey--35: #d7dae3;
+$izi-color-grey--25: #e3e5e9;
+
+// ----- LIGHT GREY -----
+$izi-color-lightgrey: #f5f7f8;
+$izi-color-lightgrey--30: #fafbfc;
+
+// ----- WARNING -----
+$izi-color-yellow: #f3b346;
+$izi-color-yellow--lighten: #fff0c8;
+$izi-color-yellow--lighten-60: #fff6de;
+
+// ----- ERROR -----
+$izi-color-red: #e24747;
+$izi-color-red--lighten: #f5cecd;
+$izi-color-red--lighten-50: #fae6e6;
+
+// ----- LINK -----
+$izi-color-blue: #1997ff;
+
+// ----- DECORATIVE -----
+$izi-color-rose: #f4f0fd;
+$izi-color-babyblue: #eff4fb;
+
+.prueba {
+  color: $izi-color-primary;
+  font-size: 20px;
+}
