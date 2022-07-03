@@ -17,6 +17,8 @@ import { SignupComponentComponent } from './pages/login-module/welcome-page/sign
 import { WelcomeComponentComponent } from './pages/login-module/welcome-page/welcome-component/welcome-component.component';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatSidenavModule,
     MatButtonModule,
     FlexLayoutModule,
+    MatInputModule,
+    MatIconModule,
   ],
 })
 export class HomeModule {}
