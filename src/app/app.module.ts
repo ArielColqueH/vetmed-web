@@ -8,6 +8,7 @@ import { HomeModule } from './modules/home/home.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule, NoopAnimationsModule, HomeModule],
+
   providers: [],
   bootstrap: [AppComponent],
 })

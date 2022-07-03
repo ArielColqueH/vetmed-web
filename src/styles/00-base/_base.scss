@@ -11,15 +11,12 @@
 html {
   /* font-size: 10px; bad practice*/
   font-size: 62.5%;
+  font-family: Roboto;
 
   // this defines what 1rem is !!!
   /* 10px/16px */
 }
 body {
   box-sizing: border-box;
-}
-
-.container {
-  margin: 0 10rem;
-  //background-color: red;
+  background-color: $background-white;
 }
