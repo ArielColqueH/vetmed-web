@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: 'AIzaSyDvKuvSQtN2E6YoaK8JeLyMo8ZMRoXneNo',
+    authDomain: 'vetmed-bd63a.firebaseapp.com',
+    projectId: 'vetmed-bd63a',
+    storageBucket: 'vetmed-bd63a.appspot.com',
+    messagingSenderId: '633548068389',
+    appId: '1:633548068389:web:651225b8ed4ff1772291cc',
+  },
 };
 
 /*

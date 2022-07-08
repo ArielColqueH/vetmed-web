@@ -5,7 +5,7 @@ import { WelcomePageComponent } from './modules/home/pages/login-module/welcome-
 import { HomePageComponent } from './modules/home/pages/pages/home-page/home-page.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/welcome-page' },
+  { path: '', pathMatch: 'full', redirectTo: '/home-page' },
   {
     path: 'welcome-page',
     component: WelcomePageComponent,

@@ -19,6 +19,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     RouterModule,
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     NoopAnimationsModule,
     MatSidenavModule,
     MatButtonModule,
