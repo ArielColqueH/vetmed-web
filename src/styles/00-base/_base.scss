@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+
   /* best practice for inheritance*/
 }
 /* general configuration */
@@ -16,6 +17,10 @@ html {
   // this defines what 1rem is !!!
   /* 10px/16px */
 }
+// p {
+//   margin: 0 !important;
+//   padding: 0 !important;
+// }
 body {
   box-sizing: border-box;
   background-color: $background-white;

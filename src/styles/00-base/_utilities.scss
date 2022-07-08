@@ -17,7 +17,7 @@ $directions: (
     }
     @each $key, $val in $directions {
       .#{$short}#{$key}-#{$space} {
-        #{$prop}-#{$val}: $space + $unit;
+        #{$prop}-#{$val}: $space + $unit + "!important";
         @if $key == v {
           #{$prop}-bottom: $space + $unit;
         }
@@ -38,4 +38,7 @@ $directions: (
 .border-horizontal {
   border-top: 1px solid $primary-dark;
   width: 70px;
+}
+.p-screen {
+  padding: 2.4rem 4rem;
 }

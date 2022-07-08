@@ -32,3 +32,21 @@
   font-weight: 400;
   color: $primary-color;
 }
+
+.a-title-page {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 76px;
+  letter-spacing: -0.5px;
+  color: $primary-dark;
+}
+.a-subtitle-page {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $terciary-color;
+}
