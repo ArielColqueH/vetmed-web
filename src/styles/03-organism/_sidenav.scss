@@ -3,6 +3,7 @@
   background-color: $primary-white;
   width: 30rem;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+  border-right: none;
   &__header {
     padding: 2.6rem;
     border-bottom: 1px solid $primary-color--light;

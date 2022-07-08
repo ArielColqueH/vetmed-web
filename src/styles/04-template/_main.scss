@@ -1,7 +1,10 @@
 mat-sidenav-container {
   height: 100vh;
-  background-color: pink !important;
+  background-color: $background-white !important;
+  &.p-all-pages {
+    height: calc(100vh - 8rem);
+  }
 }
-.container {
-  background-color: red;
-}
+// .container {
+//   background-color: red;
+// }

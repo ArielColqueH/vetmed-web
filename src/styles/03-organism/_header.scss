@@ -4,4 +4,8 @@
   justify-content: flex-end;
   align-items: center;
   background-color: $primary-white;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05) !important;
+  position: relative;
+  z-index: 5;
+  // overflow: visible;
 }
