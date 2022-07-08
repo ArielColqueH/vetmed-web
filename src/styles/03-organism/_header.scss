@@ -1,12 +1,7 @@
-.header {
-  padding: 5rem 10rem !important;
-  justify-content: space-between;
+.o-header {
+  padding: 2rem 8rem !important;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  background-color: red;
-  &__title {
-    color: black;
-    font-size: 30;
-    font-family: Quicksand;
-    font-weight: bold;
-  }
+  background-color: $primary-white;
 }
