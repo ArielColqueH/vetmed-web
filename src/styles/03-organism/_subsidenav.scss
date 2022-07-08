@@ -5,4 +5,15 @@
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
   height: 100vh;
   border-left: none !important;
+  padding: 1.6rem 2.4rem;
+  &__title {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    /* or 127% */
+
+    color: #000000;
+  }
 }
