@@ -8,11 +8,12 @@
   outline: inherit;
   border-radius: 100px;
   padding: 10px 20px;
-  min-width: 200px;
+  min-width: 150px;
   &--primary {
     background-color: $primary-color;
     font-size: 1.4rem;
     font-weight: 500;
+    line-height: 20px;
     color: $primary-white;
   }
   &--secondary {

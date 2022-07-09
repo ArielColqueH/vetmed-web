@@ -4,4 +4,103 @@
   <p class="a-subtitle-page mt-4">
     Puede seleccionar/buscar o agregar a un nuevo paciente para atenderlo
   </p>
+  <div fxLayout="row" fxLayoutAlign="space-between center">
+    <mat-form-field fxFlex="35" appearance="outline">
+      <mat-label>Ingresa el nombre de paciente o mascota</mat-label>
+      <input type="email" matInput placeholder="Pelusa" />
+      <mat-icon matSuffix>search</mat-icon>
+      <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+      <!-- <mat-error
+      *ngIf="
+        emailFormControl.hasError('email') &&
+        !emailFormControl.hasError('required')
+      "
+    >
+      Please enter a valid email address
+    </mat-error> -->
+      <!-- <mat-error *ngIf="emailFormControl.hasError('required')">
+      Email is <strong>required</strong>
+    </mat-error> -->
+    </mat-form-field>
+    <button class="m-button m-button--primary">Nuevo cliente</button>
+  </div>
+  <p class="a-title-page">Pacientes recientes</p>
+  <div fxLayout="row">
+    <div
+      class="m-patient-card mr-20"
+      fxLayout="row"
+      fxFlex="25"
+      fxLayoutAlign="none center"
+    >
+      <img
+        class="m-patient-card__img"
+        src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
+        alt=""
+        fxFlex="none"
+      />
+      <div class="ml-8" fxFlex="100">
+        <div class="m-patient-card__title">Nombre de mascota</div>
+        <div class="m-patient-card__text mt-8">Mike</div>
+        <div class="m-patient-card__title mt-8">Nombre del dueño</div>
+        <div class="m-patient-card__text mt-8">Nicole Peñaloza</div>
+      </div>
+    </div>
+    <div
+      class="m-patient-card mr-20"
+      fxLayout="row"
+      fxFlex="25"
+      fxLayoutAlign="none center"
+    >
+      <img
+        class="m-patient-card__img"
+        src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
+        alt=""
+        fxFlex="none"
+      />
+      <div class="ml-8" fxFlex="100">
+        <div class="m-patient-card__title">Nombre de mascota</div>
+        <div class="m-patient-card__text mt-8">Mike</div>
+        <div class="m-patient-card__title mt-8">Nombre del dueño</div>
+        <div class="m-patient-card__text mt-8">Nicole Peñaloza</div>
+      </div>
+    </div>
+    <div
+      class="m-patient-card mr-20"
+      fxLayout="row"
+      fxFlex="25"
+      fxLayoutAlign="none center"
+    >
+      <img
+        class="m-patient-card__img"
+        src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
+        alt=""
+        fxFlex="none"
+      />
+      <div class="ml-8" fxFlex="100">
+        <div class="m-patient-card__title">Nombre de mascota</div>
+        <div class="m-patient-card__text mt-8">Mike</div>
+        <div class="m-patient-card__title mt-8">Nombre del dueño</div>
+        <div class="m-patient-card__text mt-8">Nicole Peñaloza</div>
+      </div>
+    </div>
+    <div
+      class="m-patient-card mr-20"
+      fxLayout="row"
+      fxFlex="25"
+      fxLayoutAlign="none center"
+    >
+      <img
+        class="m-patient-card__img"
+        src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=685&q=80"
+        alt=""
+        fxFlex="none"
+      />
+      <div class="ml-16" fxFlex="100">
+        <div class="m-patient-card__title">Nombre de mascota</div>
+        <div class="m-patient-card__text mt-8">Mike</div>
+        <div class="m-patient-card__title mt-8">Nombre del dueño</div>
+        <div class="m-patient-card__text mt-8">Nicole Peñaloza</div>
+      </div>
+    </div>
+  </div>
 </div>
