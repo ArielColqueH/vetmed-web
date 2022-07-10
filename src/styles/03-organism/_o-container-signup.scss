@@ -25,4 +25,28 @@
     width: 100%;
     border-radius: 8px;
   }
+  &__image-container {
+    border: 3px dashed $primary-color;
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: $terciary-color;
+  }
+  &__big-text {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 76px;
+  }
 }

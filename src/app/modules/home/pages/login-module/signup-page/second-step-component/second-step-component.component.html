@@ -1,1 +1,31 @@
-<p>second-step-component works!</p>
+<div class="mt-80" fxLayout="row" fxLayoutAlign="center center">
+  <div class="o-container-signup" fxFlex="60">
+    <div class="o-container-signup__title">Imagenes del perfil</div>
+    <div class="o-container-signup__subtitle mt-16">
+      Ingresa la imagnes correspondientes de tu clínica para que las personas la
+      puedan identificar
+    </div>
+    <div fxLayout="row" class="mt-16">
+      <div class="mr-20" fxLayout="column" fxFlex="50">
+        <div class="o-container-signup__image-container">
+          <img [src]="imageSrc" />
+        </div>
+        <p class="o-container-signup__image-title mt-24">
+          Ingresar el logo de la clínica
+        </p>
+      </div>
+      <div fxLayout="column" fxFlex="50">
+        <div class="o-container-signup__image-container">
+          <img [src]="imageSrc" />
+        </div>
+        <p class="o-container-signup__image-title mt-24">
+          Ingresar una imagen de la clínica
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div fxLayout="row" fxLayoutAlign="center center" class="mt-80">
+  <button class="m-button m-button--terciary mr-28">Atras</button>
+  <button class="m-button m-button--primary">Siguiente</button>
+</div>

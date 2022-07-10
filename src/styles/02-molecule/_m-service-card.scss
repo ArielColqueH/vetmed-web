@@ -1,0 +1,27 @@
+.m-service-card {
+  border-radius: 10px;
+  background-color: $primary-white;
+  width: 250px;
+  height: 80px;
+  padding: 8px 12px;
+  &--active {
+    border: 3px solid $primary-color;
+  }
+  &--default {
+    border: 2px solid $disabled-color;
+  }
+  &__img-container {
+    border-radius: 10px;
+    background-color: $primary-color--light;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}

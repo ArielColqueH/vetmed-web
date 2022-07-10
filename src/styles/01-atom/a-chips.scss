@@ -1,0 +1,16 @@
+.a-chips {
+  padding: 10px 24px;
+  border-radius: 50px;
+  color: $primary-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  &--active {
+    background-color: $primary-color;
+    color: $primary-white;
+  }
+  &--inactive {
+    border: 2px solid $terciary-color;
+    color: $terciary-color;
+  }
+}

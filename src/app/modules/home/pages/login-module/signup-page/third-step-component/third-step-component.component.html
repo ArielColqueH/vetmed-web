@@ -1,1 +1,53 @@
-<p>third-step-component works!</p>
+<div class="mt-80" fxLayout="row" fxLayoutAlign="center center">
+  <div class="o-container-signup" fxFlex="60">
+    <div class="o-container-signup__title">
+      Seleccione los servicios que brinda la clínica
+    </div>
+    <div class="o-container-signup__subtitle mt-16">
+      Selecciona todos los servicios que brinda tu clínica veterinaria
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="space-evenly center" class="mt-16">
+      <div
+        class="m-service-card m-service-card--active"
+        fxLayout="row"
+        fxLayoutAlign="start center"
+      >
+        <div class="m-service-card__img-container mr-8">
+          <img [src]="vaccineIcon" alt="" class="m-service-card__img" />
+        </div>
+        <div class="m-service-card__text">Desparasitación</div>
+      </div>
+      <div
+        class="m-service-card m-service-card--default"
+        fxLayout="row"
+        fxLayoutAlign="start center"
+      >
+        <div class="m-service-card__img-container mr-8">
+          <img [src]="vaccineIcon" alt="" class="m-service-card__img" />
+        </div>
+        <div class="m-service-card__text">Desparasitación</div>
+      </div>
+    </div>
+    <div class="o-container-signup__title mt-20">
+      Seleccione el tipo de servicio en sala
+    </div>
+
+    <div class="o-container-signup__subtitle mt-16">
+      *Con reserva quiere decir que toda cita debe hacerse con previa llamada o
+      mensaje por whatsapp
+    </div>
+    <div class="o-container-signup__subtitle mt-16">
+      *Sin reserva quiere decir que las personas pueden apersonarse a la clínica
+      y se les atendera por orden de llegada
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center" class="mt-16">
+      <div class="a-chips a-chips--active mr-20">Con reserva</div>
+      <div class="a-chips a-chips--inactive">Sin reserva</div>
+    </div>
+  </div>
+</div>
+<div fxLayout="row" fxLayoutAlign="center center" class="mt-80">
+  <button class="m-button m-button--terciary mr-28">Atras</button>
+  <button class="m-button m-button--primary">Siguiente</button>
+</div>

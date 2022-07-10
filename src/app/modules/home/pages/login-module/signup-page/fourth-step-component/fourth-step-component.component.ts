@@ -3,14 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-fourth-step-component',
   templateUrl: './fourth-step-component.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class FourthStepComponentComponent implements OnInit {
+  imageDoctor = 'assets/images/signup-img.svg';
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

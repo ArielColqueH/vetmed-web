@@ -3,14 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-second-step-component',
   templateUrl: './second-step-component.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class SecondStepComponentComponent implements OnInit {
+  imageSrc = 'assets/images/photo-icon.svg';
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
