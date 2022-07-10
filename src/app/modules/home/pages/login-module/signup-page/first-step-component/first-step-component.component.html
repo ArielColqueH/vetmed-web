@@ -1,18 +1,38 @@
 <div class="mt-80" fxLayout="row" fxLayoutAlign="space-evenly center">
   <div class="o-container-signup" fxFlex="30">
     <div class="o-container-signup__title">Datos de la clínica</div>
-    <div class="o-container-signup__subtitle mt-2">
+    <div class="o-container-signup__subtitle mt-16">
       Ingresa los datos de tu clínica para que todos los clientes de la
       plataforma puedan contactarte!
     </div>
-    <div class="o-container-signup__inputs mt-2"></div>
+    <div class="o-container-signup__inputs mt-16" fxLayout="column">
+      <mat-form-field fxFlex="100" appearance="outline">
+        <mat-label>Nombre de la clínica</mat-label>
+        <input type="email" matInput placeholder="Las Mascotas" />
+        <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+      </mat-form-field>
+      <mat-form-field fxFlex="100" appearance="outline">
+        <mat-label>Nombre del dueño de la clínica</mat-label>
+        <input type="text" matInput placeholder="Juan Calle" />
+        <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+      </mat-form-field>
+      <mat-form-field fxFlex="100" appearance="outline">
+        <mat-label>Numero de whatsapp</mat-label>
+        <input type="text" matInput placeholder="76743310" />
+        <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+      </mat-form-field>
+    </div>
   </div>
   <div class="o-container-signup" fxFlex="30">
-    <div class="o-container-signup__title mt-2">Ubicación de la clínica</div>
-    <div class="o-container-signup__subtitle mt-2">
+    <div class="o-container-signup__title">Ubicación de la clínica</div>
+    <div class="o-container-signup__subtitle mt-16">
       Ingresa la ubicación exacta de tu clínica veterinaria, asi los clientes
       podran encontrarte!
     </div>
-    <div class="o-container-signup__map"></div>
+    <div class="o-container-signup__map mt-16" id="map"></div>
   </div>
+</div>
+<div fxLayout="row" fxLayoutAlign="center center" class="mt-80">
+  <button class="m-button m-button--terciary mr-28">Ahora no</button>
+  <button class="m-button m-button--primary">Siguiente</button>
 </div>

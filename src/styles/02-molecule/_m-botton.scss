@@ -22,6 +22,12 @@
     font-weight: 500;
     color: $primary-white;
   }
+  &--terciary {
+    background-color: $terciary-color;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $primary-white;
+  }
 }
 
 .m-circular-button {

@@ -19,4 +19,10 @@
     line-height: 20px;
     color: $terciary-color;
   }
+  &__map {
+    background-color: pink;
+    height: 230px;
+    width: 100%;
+    border-radius: 8px;
+  }
 }
