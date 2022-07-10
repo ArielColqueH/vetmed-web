@@ -1,5 +1,6 @@
 // padding and margins
-$spacing: 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60; // Modify this to generate your spacing classes
+$spacing: 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68,
+  72, 76, 80; // Modify this to generate your spacing classes
 $unit: px; // Modify this to specify your unit eg: em, pt, %.
 
 $directions: (
@@ -10,6 +11,7 @@ $directions: (
   v: top,
   h: left,
 );
+
 @mixin generateSpacing($prop, $short) {
   @each $space in $spacing {
     .#{$short}a-#{$space} {

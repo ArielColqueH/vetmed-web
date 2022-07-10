@@ -1,0 +1,22 @@
+.o-container-signup {
+  background: $primary-white;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 3.2rem;
+  &__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: $primary-dark;
+  }
+  &__subtitle {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $terciary-color;
+  }
+}
