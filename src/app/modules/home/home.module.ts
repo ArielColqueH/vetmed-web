@@ -22,6 +22,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { SignupPageComponent } from './pages/login-module/signup-page/signup-page.component';
+import { NavbarComponentComponent } from './pages/login-module/signup-page/navbar-component/navbar-component.component';
+import { FirstStepComponentComponent } from './pages/login-module/signup-page/first-step-component/first-step-component.component';
+import { SecondStepComponentComponent } from './pages/login-module/signup-page/second-step-component/second-step-component.component';
+import { ThirdStepComponentComponent } from './pages/login-module/signup-page/third-step-component/third-step-component.component';
+import { FourthStepComponentComponent } from './pages/login-module/signup-page/fourth-step-component/fourth-step-component.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +42,12 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     LoginComponentComponent,
     SignupComponentComponent,
     WelcomeComponentComponent,
+    SignupPageComponent,
+    NavbarComponentComponent,
+    FirstStepComponentComponent,
+    SecondStepComponentComponent,
+    ThirdStepComponentComponent,
+    FourthStepComponentComponent,
   ],
 
   imports: [
