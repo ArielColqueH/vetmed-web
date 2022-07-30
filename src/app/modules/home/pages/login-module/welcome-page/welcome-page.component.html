@@ -1,8 +1,11 @@
 <img [src]="wavetopSrc" class="p-welcome-waves--top" />
 <div fxlayout="row" fxLayoutAlign="space-evenly center" style="height: 100vh">
+  <div class="" fxFlex="25">
+    <router-outlet></router-outlet>
+  </div>
   <!-- <app-welcome-component fxLayout="column" fxFlex="25"></app-welcome-component> -->
   <!-- <app-login-component fxLayout="column" fxFlex="25"></app-login-component> -->
-  <app-signup-component fxLayout="column" fxFlex="25"></app-signup-component>
+  <!-- <app-signup-component fxLayout="column" fxFlex="25"></app-signup-component> -->
 
   <div fxLayout="column" fxFlex="35">
     <img [src]="imageSrc" />

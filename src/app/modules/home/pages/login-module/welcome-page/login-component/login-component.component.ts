@@ -6,6 +6,7 @@ import {
   Validators,
 } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(
@@ -34,7 +35,11 @@ export class LoginComponentComponent implements OnInit {
   value = 'Clear me';
 
   matcher = new MyErrorStateMatcher();
-  constructor() {}
 
+  constructor(private router: Router, private route: ActivatedRoute) {}
   ngOnInit(): void {}
+
+  goto(link: any) {
+    this.router.navigate([link]);
+  }
 }

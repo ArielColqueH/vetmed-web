@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Loader } from '@googlemaps/js-api-loader';
 
 @Component({
@@ -8,7 +9,8 @@ import { Loader } from '@googlemaps/js-api-loader';
 })
 export class FirstStepComponentComponent implements OnInit {
   title = 'google-maps';
-  constructor() {}
+
+  constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     let loader = new Loader({
@@ -21,5 +23,9 @@ export class FirstStepComponentComponent implements OnInit {
         zoom: 6,
       });
     });
+  }
+
+  goto(link: any) {
+    this.router.navigate([link]);
   }
 }

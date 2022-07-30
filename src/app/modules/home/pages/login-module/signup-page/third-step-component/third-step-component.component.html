@@ -48,6 +48,13 @@
   </div>
 </div>
 <div fxLayout="row" fxLayoutAlign="center center" class="mt-80">
-  <button class="m-button m-button--terciary mr-28">Atras</button>
-  <button class="m-button m-button--primary">Siguiente</button>
+  <button
+    class="m-button m-button--terciary mr-28"
+    (click)="goto('second-step-page')"
+  >
+    Atras
+  </button>
+  <button class="m-button m-button--primary" (click)="goto('fourth-step-page')">
+    Siguiente
+  </button>
 </div>

@@ -1,73 +1,77 @@
-<p class="a-big-text txt-center">VETMED</p>
-<div class="mt-32">
-  <p class="a-subtitle-2">Ingresar</p>
-</div>
-<div class="mt-16">
-  <p class="a-text-primary">
-    Gracias por volver! Ingresa a tu cuenta para atender bien a todos tu
-    clientes.
-  </p>
-</div>
-<form class="mt-24" fxLayout="column">
-  <mat-form-field fxFlex="100" appearance="outline">
-    <mat-label>Email</mat-label>
-    <input
-      type="email"
-      matInput
-      [errorStateMatcher]="matcher"
-      placeholder="Ex. pat@example.com"
-    />
-    <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
-    <mat-error
-      *ngIf="
-        emailFormControl.hasError('email') &&
-        !emailFormControl.hasError('required')
-      "
-    >
-      Please enter a valid email address
-    </mat-error>
-    <mat-error *ngIf="emailFormControl.hasError('required')">
-      Email is <strong>required</strong>
-    </mat-error>
-  </mat-form-field>
-  <mat-form-field class="mt-16" fxFlex="100" appearance="outline">
-    <mat-label>Constraseña</mat-label>
-    <input
-      type="password"
-      matInput
-      [errorStateMatcher]="matcher"
-      placeholder="Ex. pat@example.com"
-    />
-    <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
-    <mat-error
-      *ngIf="
-        emailFormControl.hasError('email') &&
-        !emailFormControl.hasError('required')
-      "
-    >
-      Please enter a valid email address
-    </mat-error>
-    <mat-error *ngIf="emailFormControl.hasError('required')">
-      Email is <strong>required</strong>
-    </mat-error>
-  </mat-form-field>
-</form>
-<button class="m-button m-button--primary mt-20">Ingresar</button>
-<div class="mt-40" fxLayout="row" fxLayoutAlign="center center">
-  <div class="border-horizontal"></div>
-  <div class="mh-52">
-    <p class="a-subtext-primary">Crea tu cuenta con Google</p>
+<div class="" fxLayout="column">
+  <p class="a-big-text txt-center">VETMED</p>
+  <div class="mt-32">
+    <p class="a-subtitle-2">Ingresar</p>
   </div>
-  <div class="border-horizontal"></div>
-</div>
-<div fxFlex fxLayoutAlign="center center" class="mv-16">
-  <button mat-fab class="m-button-icon">
-    <img [src]="iconSrc" />
+  <div class="mt-16">
+    <p class="a-text-primary">
+      Gracias por volver! Ingresa a tu cuenta para atender bien a todos tu
+      clientes.
+    </p>
+  </div>
+  <form class="mt-24" fxLayout="column">
+    <mat-form-field fxFlex="100" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+        [errorStateMatcher]="matcher"
+        placeholder="Ex. pat@example.com"
+      />
+      <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+      <mat-error
+        *ngIf="
+          emailFormControl.hasError('email') &&
+          !emailFormControl.hasError('required')
+        "
+      >
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="mt-16" fxFlex="100" appearance="outline">
+      <mat-label>Constraseña</mat-label>
+      <input
+        type="password"
+        matInput
+        [errorStateMatcher]="matcher"
+        placeholder="Ex. pat@example.com"
+      />
+      <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+      <mat-error
+        *ngIf="
+          emailFormControl.hasError('email') &&
+          !emailFormControl.hasError('required')
+        "
+      >
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+  </form>
+  <button class="m-button m-button--primary mt-20" (click)="goto('home-page')">
+    Ingresar
   </button>
-</div>
-<div fxFlex fxLayoutAlign="center center" class="mt-16">
-  <p class="a-subtext-primary">¿Ya tienes cuenta?</p>
-  <div class="ml-16">
-    <p class="a-subtext-primary--primary">Ingresa por aqui</p>
+  <div class="mt-40" fxLayout="row" fxLayoutAlign="center center">
+    <div class="border-horizontal"></div>
+    <div class="mh-52">
+      <p class="a-subtext-primary">Crea tu cuenta con Google</p>
+    </div>
+    <div class="border-horizontal"></div>
+  </div>
+  <div fxFlex fxLayoutAlign="center center" class="mv-16">
+    <button mat-fab class="m-button-icon">
+      <img [src]="iconSrc" />
+    </button>
+  </div>
+  <div fxFlex fxLayoutAlign="center center" class="mt-16">
+    <p class="a-subtext-primary">¿Ya tienes cuenta?</p>
+    <div class="ml-16">
+      <p class="a-subtext-primary--primary">Ingresa por aqui</p>
+    </div>
   </div>
 </div>

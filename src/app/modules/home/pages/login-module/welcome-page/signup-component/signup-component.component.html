@@ -1,115 +1,122 @@
-<p class="a-big-text txt-center">VETMED</p>
-<div class="mt-32">
-  <p class="a-subtitle-2">Crear cuenta</p>
-</div>
-<div class="mt-16">
-  <p class="a-text-primary">
-    No tienes cuenta? Registrate para poder darle a tus clientes la mejor
-    experiencia para cuidar a sus mascotas.
-  </p>
-</div>
-<form class="mt-16" fxLayout="column">
-  <mat-form-field class="mt-8" fxFlex="100" appearance="outline">
-    <mat-label>Nombre</mat-label>
-    <input
-      type="email"
-      matInput
-      [errorStateMatcher]="matcher"
-      placeholder="Ariel"
-    />
-    <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
-    <mat-error
-      *ngIf="
-        emailFormControl.hasError('email') &&
-        !emailFormControl.hasError('required')
-      "
-    >
-      Please enter a valid email address
-    </mat-error>
-    <mat-error *ngIf="emailFormControl.hasError('required')">
-      Email is <strong>required</strong>
-    </mat-error>
-  </mat-form-field>
-  <mat-form-field fxFlex="100" appearance="outline">
-    <mat-label>Apellidos</mat-label>
-    <input
-      type="text"
-      matInput
-      [errorStateMatcher]="matcher"
-      placeholder="Colque Herrera"
-    />
-    <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
-    <mat-error
-      *ngIf="
-        emailFormControl.hasError('email') &&
-        !emailFormControl.hasError('required')
-      "
-    >
-      Please enter a valid email address
-    </mat-error>
-    <mat-error *ngIf="emailFormControl.hasError('required')">
-      Email is <strong>required</strong>
-    </mat-error>
-  </mat-form-field>
-  <mat-form-field fxFlex="100" appearance="outline">
-    <mat-label>Email</mat-label>
-    <input
-      type="email"
-      matInput
-      [errorStateMatcher]="matcher"
-      placeholder="Ex. pat@example.com"
-    />
-    <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
-    <mat-error
-      *ngIf="
-        emailFormControl.hasError('email') &&
-        !emailFormControl.hasError('required')
-      "
-    >
-      Please enter a valid email address
-    </mat-error>
-    <mat-error *ngIf="emailFormControl.hasError('required')">
-      Email is <strong>required</strong>
-    </mat-error>
-  </mat-form-field>
-  <mat-form-field fxFlex="100" appearance="outline">
-    <mat-label>Constraseña</mat-label>
-    <input
-      type="password"
-      matInput
-      [errorStateMatcher]="matcher"
-      placeholder="Ex. pat@example.com"
-    />
-    <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
-    <mat-error
-      *ngIf="
-        emailFormControl.hasError('email') &&
-        !emailFormControl.hasError('required')
-      "
-    >
-      Please enter a valid email address
-    </mat-error>
-    <mat-error *ngIf="emailFormControl.hasError('required')">
-      Email is <strong>required</strong>
-    </mat-error>
-  </mat-form-field>
-</form>
-<button class="m-button m-button--primary mt-20">Empecemos</button>
-<div class="mt-40" fxLayout="row" fxLayoutAlign="center center">
-  <div class="border-horizontal"></div>
-  <div class="mh-52">
-    <p class="a-subtext-primary">Ingresa con Google</p>
+<div class="" fxLayout="column">
+  <p class="a-big-text txt-center">VETMED</p>
+  <div class="mt-32">
+    <p class="a-subtitle-2">Crear cuenta</p>
   </div>
-  <div class="border-horizontal"></div>
-</div>
-<div fxFlex fxLayoutAlign="center center" class="mv-16">
-  <button mat-fab class="m-button-icon">
-    <img [src]="iconSrc" />
+  <div class="mt-16">
+    <p class="a-text-primary">
+      No tienes cuenta? Registrate para poder darle a tus clientes la mejor
+      experiencia para cuidar a sus mascotas.
+    </p>
+  </div>
+  <form class="mt-16" fxLayout="column">
+    <mat-form-field class="mt-8" fxFlex="100" appearance="outline">
+      <mat-label>Nombre</mat-label>
+      <input
+        type="email"
+        matInput
+        [errorStateMatcher]="matcher"
+        placeholder="Ariel"
+      />
+      <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+      <mat-error
+        *ngIf="
+          emailFormControl.hasError('email') &&
+          !emailFormControl.hasError('required')
+        "
+      >
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field fxFlex="100" appearance="outline">
+      <mat-label>Apellidos</mat-label>
+      <input
+        type="text"
+        matInput
+        [errorStateMatcher]="matcher"
+        placeholder="Colque Herrera"
+      />
+      <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+      <mat-error
+        *ngIf="
+          emailFormControl.hasError('email') &&
+          !emailFormControl.hasError('required')
+        "
+      >
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field fxFlex="100" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+        [errorStateMatcher]="matcher"
+        placeholder="Ex. pat@example.com"
+      />
+      <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+      <mat-error
+        *ngIf="
+          emailFormControl.hasError('email') &&
+          !emailFormControl.hasError('required')
+        "
+      >
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field fxFlex="100" appearance="outline">
+      <mat-label>Constraseña</mat-label>
+      <input
+        type="password"
+        matInput
+        [errorStateMatcher]="matcher"
+        placeholder="Ex. pat@example.com"
+      />
+      <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+      <mat-error
+        *ngIf="
+          emailFormControl.hasError('email') &&
+          !emailFormControl.hasError('required')
+        "
+      >
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+  </form>
+  <button
+    class="m-button m-button--primary mt-20"
+    (click)="goto('first-step-page')"
+  >
+    Empecemos
   </button>
-</div>
-<div fxFlex fxLayoutAlign="center center" class="mt-16">
-  <p class="a-subtext-primary">¿No tienes cuenta?</p>
-  <div class="ml-16">
-    <p class="a-subtext-primary--primary">Registrate por aqui</p>
+  <div class="mt-40" fxLayout="row" fxLayoutAlign="center center">
+    <div class="border-horizontal"></div>
+    <div class="mh-52">
+      <p class="a-subtext-primary">Ingresa con Google</p>
+    </div>
+    <div class="border-horizontal"></div>
+  </div>
+  <div fxFlex fxLayoutAlign="center center" class="mv-16">
+    <button mat-fab class="m-button-icon">
+      <img [src]="iconSrc" />
+    </button>
+  </div>
+  <div fxFlex fxLayoutAlign="center center" class="mt-16">
+    <p class="a-subtext-primary">¿No tienes cuenta?</p>
+    <div class="ml-16">
+      <p class="a-subtext-primary--primary">Registrate por aqui</p>
+    </div>
   </div>
 </div>

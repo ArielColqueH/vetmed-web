@@ -5,5 +5,11 @@
     de tu mascota a la mano.
   </p>
 </div>
-<button class="m-button m-button--primary mt-40">Ingresar</button>
-<button class="m-button m-button--secondary mt-24">Crear cuenta</button>
+<div class="" fxLayout="row" fxLayoutAlign="space-evenly center">
+  <button class="m-button m-button--primary mt-40" (click)="goto('login')">
+    Ingresar
+  </button>
+  <button class="m-button m-button--secondary mt-24" (click)="goto('signup')">
+    Crear cuenta
+  </button>
+</div>
