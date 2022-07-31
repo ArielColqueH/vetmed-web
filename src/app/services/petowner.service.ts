@@ -4,6 +4,8 @@ import {
   Firestore,
   addDoc,
   collectionData,
+  doc,
+  deleteDoc,
 } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import PetOwner from '../interfaces/PetOwner.interface';
@@ -23,5 +25,10 @@ export class PetownerService {
     return collectionData(petOwnerRef, { idField: 'id' }) as Observable<
       PetOwner[]
     >;
+  }
+
+  deletePetOwner(petOwner: PetOwner) {
+    const petOwnerDocRef = doc(this.firestore, `PetOwner/${petOwner.id}`);
+    return deleteDoc(petOwnerDocRef);
   }
 }

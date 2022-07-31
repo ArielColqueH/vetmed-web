@@ -1,5 +1,5 @@
 export default interface PetOwner {
-  PetOwnerId: String;
+  id?: String;
   Name: String;
   Lastname: String;
   Email: String;
