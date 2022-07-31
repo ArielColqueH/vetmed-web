@@ -9,7 +9,11 @@ import { PetownerService } from 'src/app/services/petowner.service';
 export class HomePageComponent implements OnInit {
   constructor(private petOwnerService: PetownerService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.petOwnerService.getPetOwners().subscribe((petOwners) => {
+      console.log(petOwners);
+    });
+  }
   async addPetOwner() {
     var po = {
       PetOwnerId: 'x',
