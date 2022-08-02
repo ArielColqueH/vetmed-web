@@ -1,0 +1,23 @@
+.m-profile-doctor {
+  position: relative;
+  width: 180px;
+  &__container {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    background-color: yellow;
+    margin-bottom: 8px;
+    object-fit: cover;
+  }
+  &__edit-icon {
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    color: $primary-white !important;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+  }
+}

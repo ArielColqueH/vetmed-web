@@ -31,6 +31,13 @@ import { FourthStepComponentComponent } from './pages/login-module/signup-page/f
 import { AddDoctorPageComponent } from './pages/pages/doctors/add-doctor-page/add-doctor-page.component';
 import { EditDoctorPageComponent } from './pages/pages/doctors/edit-doctor-page/edit-doctor-page.component';
 import { DoctorsComponent } from './pages/pages/doctors/doctors.component';
+import { SettingsComponent } from './pages/pages/settings/settings.component';
+import { EditSettingsComponent } from './pages/pages/settings/edit-settings/edit-settings.component';
+import { ListSettingsComponent } from './pages/pages/settings/list-settings/list-settings.component';
+import { RecordsComponent } from './pages/pages/records/records.component';
+import { OwnerProfileRecordComponent } from './pages/pages/records/owner-profile-record/owner-profile-record.component';
+import { ListRecordsComponent } from './pages/pages/records/list-records/list-records.component';
+import { DoctorsPageComponent } from './pages/pages/doctors/doctors-page/doctors-page.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +61,13 @@ import { DoctorsComponent } from './pages/pages/doctors/doctors.component';
     AddDoctorPageComponent,
     EditDoctorPageComponent,
     DoctorsComponent,
+    SettingsComponent,
+    EditSettingsComponent,
+    ListSettingsComponent,
+    RecordsComponent,
+    OwnerProfileRecordComponent,
+    ListRecordsComponent,
+    DoctorsPageComponent,
   ],
 
   imports: [

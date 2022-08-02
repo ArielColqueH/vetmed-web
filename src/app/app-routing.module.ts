@@ -15,6 +15,11 @@ import { DoctorsPageComponent } from './modules/home/pages/pages/doctors/doctors
 import { DoctorsComponent } from './modules/home/pages/pages/doctors/doctors.component';
 import { EditDoctorPageComponent } from './modules/home/pages/pages/doctors/edit-doctor-page/edit-doctor-page.component';
 import { HomePageComponent } from './modules/home/pages/pages/home-page/home-page.component';
+import { ListRecordsComponent } from './modules/home/pages/pages/records/list-records/list-records.component';
+import { OwnerProfileRecordComponent } from './modules/home/pages/pages/records/owner-profile-record/owner-profile-record.component';
+import { RecordsComponent } from './modules/home/pages/pages/records/records.component';
+import { EditSettingsComponent } from './modules/home/pages/pages/settings/edit-settings/edit-settings.component';
+import { ListSettingsComponent } from './modules/home/pages/pages/settings/list-settings/list-settings.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/welcome-page' },
@@ -68,6 +73,25 @@ const routes: Routes = [
         component: HomePageComponent,
       },
       {
+        path: 'records',
+        component: RecordsComponent,
+        children: [
+          {
+            path: '',
+            redirectTo: 'list-records',
+            pathMatch: 'full',
+          },
+          {
+            path: 'list-records',
+            component: ListRecordsComponent,
+          },
+          {
+            path: 'pet-owner-profile',
+            component: OwnerProfileRecordComponent,
+          },
+        ],
+      },
+      {
         path: 'doctors',
         component: DoctorsComponent,
         children: [
@@ -87,6 +111,25 @@ const routes: Routes = [
           {
             path: 'edit-doctor',
             component: EditDoctorPageComponent,
+          },
+        ],
+      },
+      {
+        path: 'settings',
+        component: DoctorsComponent,
+        children: [
+          {
+            path: '',
+            redirectTo: 'list-settings',
+            pathMatch: 'full',
+          },
+          {
+            path: 'list-settings',
+            component: ListSettingsComponent,
+          },
+          {
+            path: 'edit-settings',
+            component: EditSettingsComponent,
           },
         ],
       },
