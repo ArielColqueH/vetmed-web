@@ -10,6 +10,9 @@ import { LoginComponentComponent } from './modules/home/pages/login-module/welco
 import { SignupComponentComponent } from './modules/home/pages/login-module/welcome-page/signup-component/signup-component.component';
 import { WelcomeComponentComponent } from './modules/home/pages/login-module/welcome-page/welcome-component/welcome-component.component';
 import { WelcomePageComponent } from './modules/home/pages/login-module/welcome-page/welcome-page.component';
+import { AddDoctorPageComponent } from './modules/home/pages/pages/doctors/add-doctor-page/add-doctor-page.component';
+import { DoctorsPageComponent } from './modules/home/pages/pages/doctors/doctors-page/doctors-page.component';
+import { EditDoctorPageComponent } from './modules/home/pages/pages/doctors/edit-doctor-page/edit-doctor-page.component';
 import { HomePageComponent } from './modules/home/pages/pages/home-page/home-page.component';
 
 const routes: Routes = [
@@ -62,6 +65,20 @@ const routes: Routes = [
       {
         path: 'home-page',
         component: HomePageComponent,
+      },
+      {
+        path: 'doctors-page',
+        component: DoctorsPageComponent,
+        children: [
+          {
+            path: 'edit',
+            component: EditDoctorPageComponent,
+          },
+          {
+            path: 'add',
+            component: AddDoctorPageComponent,
+          },
+        ],
       },
     ],
   },

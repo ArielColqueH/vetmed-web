@@ -28,6 +28,8 @@ import { FirstStepComponentComponent } from './pages/login-module/signup-page/fi
 import { SecondStepComponentComponent } from './pages/login-module/signup-page/second-step-component/second-step-component.component';
 import { ThirdStepComponentComponent } from './pages/login-module/signup-page/third-step-component/third-step-component.component';
 import { FourthStepComponentComponent } from './pages/login-module/signup-page/fourth-step-component/fourth-step-component.component';
+import { AddDoctorPageComponent } from './pages/pages/doctors/add-doctor-page/add-doctor-page.component';
+import { EditDoctorPageComponent } from './pages/pages/doctors/edit-doctor-page/edit-doctor-page.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { FourthStepComponentComponent } from './pages/login-module/signup-page/f
     SecondStepComponentComponent,
     ThirdStepComponentComponent,
     FourthStepComponentComponent,
+    AddDoctorPageComponent,
+    EditDoctorPageComponent,
   ],
 
   imports: [

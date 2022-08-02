@@ -18,29 +18,26 @@ export class HomePageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.petOwnerService.getPetOwners().subscribe((petOwners) => {
-      this.petOwners = petOwners;
-      console.log(this.petOwners.length);
+    this.petOwnerService.getPetOwners().subscribe((petOwner) => {
+      console.log(petOwner.length);
+      this.petOwners = petOwner;
       for (var i = 0; i < this.petOwners.length; i++) {
+        console.log('ownerName: ' + this.petOwners[i].Name);
+        console.log('ownerLastname: ' + this.petOwners[i].Lastname);
         this.petService
           .getPetsByPetOwnerId(this.petOwners[i])
           .subscribe((pet) => {
             this.petList = pet;
-            console.log('pet list:' + pet.length);
+            console.log('petlist: ' + this.petList.length);
+            for (var j = 0; j < this.petList.length; j++) {
+              console.log('PetName: ' + this.petList[j].PetName);
+              console.log('PetLastName: ' + this.petList[j].PetLastname);
+            }
           });
-        console.log('OwnerName' + this.petOwners[i].Name);
-        console.log('OwnerLastName' + this.petOwners[i].Lastname);
-        for (var j = 0; j < this.petList.length; j++) {
-          console.log('PetName' + this.petList[j].PetName);
-          console.log('PetLastName' + this.petList[j].PetLastname);
-        }
       }
     });
 
     // console.log(this.petOwners.length);
-    // for (var i = 0; i < this.petOwners.length; i++) {
-    //   console.log('log:' + i);
-    // }
   }
   async addPetOwner() {
     var po = {
@@ -57,5 +54,15 @@ export class HomePageComponent implements OnInit {
   async deletePetOwner(petOwner: PetOwner) {
     const response = await this.petOwnerService.deletePetOwner(petOwner);
     console.log(response);
+  }
+
+  async getAllPets() {
+    await this.petOwnerService.getPetOwners().subscribe((petOwner) => {
+      this.petOwners = petOwner;
+      // console.log(petOwner.length);
+      // for (var i = 0; i < petOwner.length; i++) {
+      //   this.petOwners.push(petOwner[i]);
+      // }
+    });
   }
 }

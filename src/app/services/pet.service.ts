@@ -23,8 +23,6 @@ export class PetService {
   }
 
   getPetsByPetOwnerId(petOwner: PetOwner) {
-    console.log(petOwner);
-    console.log('id:' + petOwner.id);
     const petRef = collection(this.firestore, 'Pet');
     const q = query(petRef, where('PetOwnerId', '==', petOwner.id));
     return collectionData(q, { idField: 'id' }) as Observable<Pet[]>;

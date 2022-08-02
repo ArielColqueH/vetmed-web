@@ -4,13 +4,11 @@
   line-height: 2.8rem;
   padding: 13px 20px 13px 20px;
   text-decoration: none;
+  background-color: transparent;
+  color: $secondary-color;
   &--active {
     background-color: $primary-color;
     color: $primary-white;
     border-radius: 50px;
-  }
-  &--inactive {
-    background-color: transparent;
-    color: $secondary-color;
   }
 }
