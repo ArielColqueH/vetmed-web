@@ -12,6 +12,7 @@ import { WelcomeComponentComponent } from './modules/home/pages/login-module/wel
 import { WelcomePageComponent } from './modules/home/pages/login-module/welcome-page/welcome-page.component';
 import { AddDoctorPageComponent } from './modules/home/pages/pages/doctors/add-doctor-page/add-doctor-page.component';
 import { DoctorsPageComponent } from './modules/home/pages/pages/doctors/doctors-page/doctors-page.component';
+import { DoctorsComponent } from './modules/home/pages/pages/doctors/doctors.component';
 import { EditDoctorPageComponent } from './modules/home/pages/pages/doctors/edit-doctor-page/edit-doctor-page.component';
 import { HomePageComponent } from './modules/home/pages/pages/home-page/home-page.component';
 
@@ -67,16 +68,25 @@ const routes: Routes = [
         component: HomePageComponent,
       },
       {
-        path: 'doctors-page',
-        component: DoctorsPageComponent,
+        path: 'doctors',
+        component: DoctorsComponent,
         children: [
           {
-            path: 'edit',
-            component: EditDoctorPageComponent,
+            path: '',
+            redirectTo: 'list-doctors',
+            pathMatch: 'full',
           },
           {
-            path: 'add',
+            path: 'list-doctors',
+            component: DoctorsPageComponent,
+          },
+          {
+            path: 'add-doctor',
             component: AddDoctorPageComponent,
+          },
+          {
+            path: 'edit-doctor',
+            component: EditDoctorPageComponent,
           },
         ],
       },

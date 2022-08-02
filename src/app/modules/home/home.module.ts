@@ -30,6 +30,7 @@ import { ThirdStepComponentComponent } from './pages/login-module/signup-page/th
 import { FourthStepComponentComponent } from './pages/login-module/signup-page/fourth-step-component/fourth-step-component.component';
 import { AddDoctorPageComponent } from './pages/pages/doctors/add-doctor-page/add-doctor-page.component';
 import { EditDoctorPageComponent } from './pages/pages/doctors/edit-doctor-page/edit-doctor-page.component';
+import { DoctorsComponent } from './pages/pages/doctors/doctors.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { EditDoctorPageComponent } from './pages/pages/doctors/edit-doctor-page/
     FourthStepComponentComponent,
     AddDoctorPageComponent,
     EditDoctorPageComponent,
+    DoctorsComponent,
   ],
 
   imports: [
