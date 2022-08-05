@@ -1,7 +1,15 @@
-<div class="p-screen">
+<div class="p-screen p-screen-doctors">
+  <button class="m-button--square">
+    <mat-icon aria-hidden="false" (click)="addDoctor()">add</mat-icon>
+  </button>
   <p class="a-title-page">Lista de doctores</p>
   <div class="m-profile-doctor">
-    <mat-icon matSuffix class="m-profile-doctor__edit-icon">settings</mat-icon>
+    <mat-icon
+      matSuffix
+      class="m-profile-doctor__edit-icon"
+      (click)="editDoctor()"
+      >settings</mat-icon
+    >
     <img
       class="m-profile-doctor__container"
       src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"

@@ -92,16 +92,11 @@ const routes: Routes = [
         ],
       },
       {
-        path: 'doctors',
+        path: '',
         component: DoctorsComponent,
         children: [
           {
-            path: '',
-            redirectTo: 'list-doctors',
-            pathMatch: 'full',
-          },
-          {
-            path: 'list-doctors',
+            path: 'doctors',
             component: DoctorsPageComponent,
           },
           {

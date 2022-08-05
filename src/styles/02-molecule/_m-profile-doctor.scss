@@ -5,11 +5,11 @@
     width: 180px;
     height: 180px;
     border-radius: 10px;
-    background-color: yellow;
     margin-bottom: 8px;
     object-fit: cover;
   }
   &__edit-icon {
+    cursor: pointer;
     position: absolute;
     right: 8px;
     top: 12px;
