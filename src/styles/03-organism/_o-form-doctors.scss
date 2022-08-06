@@ -1,0 +1,30 @@
+.o-form-doctor {
+  background-color: $primary-white;
+  padding: 32px;
+  &__titles {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: $terciary-color;
+  }
+  &__photo {
+    width: 310px;
+    height: 310px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  &__insert-photo {
+    border: 3px dashed $primary-color;
+    height: 310px;
+    width: 310px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
