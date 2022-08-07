@@ -38,6 +38,13 @@ import { RecordsComponent } from './pages/pages/records/records.component';
 import { OwnerProfileRecordComponent } from './pages/pages/records/owner-profile-record/owner-profile-record.component';
 import { ListRecordsComponent } from './pages/pages/records/list-records/list-records.component';
 import { DoctorsPageComponent } from './pages/pages/doctors/doctors-page/doctors-page.component';
+import { Attentiontakeweight1Component } from './pages/pages/home-page/attentiontakeweight1/attentiontakeweight1.component';
+import { Attentionassigndoctor2Component } from './pages/pages/home-page/attentionassigndoctor2/attentionassigndoctor2.component';
+import { InicioComponent } from './pages/pages/home-page/inicio/inicio.component';
+import { Attentionagiveservice3Component } from './pages/pages/home-page/attentionagiveservice3/attentionagiveservice3.component';
+import { Attentionachooserecord4Component } from './pages/pages/home-page/attentionachooserecord4/attentionachooserecord4.component';
+import { Attentionarecorddetail5Component } from './pages/pages/home-page/attentionarecorddetail5/attentionarecorddetail5.component';
+import { Attentionlaststep6Component } from './pages/pages/home-page/attentionlaststep6/attentionlaststep6.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +75,13 @@ import { DoctorsPageComponent } from './pages/pages/doctors/doctors-page/doctors
     OwnerProfileRecordComponent,
     ListRecordsComponent,
     DoctorsPageComponent,
+    Attentiontakeweight1Component,
+    Attentionassigndoctor2Component,
+    InicioComponent,
+    Attentionagiveservice3Component,
+    Attentionachooserecord4Component,
+    Attentionarecorddetail5Component,
+    Attentionlaststep6Component,
   ],
 
   imports: [

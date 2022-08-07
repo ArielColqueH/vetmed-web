@@ -14,7 +14,14 @@ import { AddDoctorPageComponent } from './modules/home/pages/pages/doctors/add-d
 import { DoctorsPageComponent } from './modules/home/pages/pages/doctors/doctors-page/doctors-page.component';
 import { DoctorsComponent } from './modules/home/pages/pages/doctors/doctors.component';
 import { EditDoctorPageComponent } from './modules/home/pages/pages/doctors/edit-doctor-page/edit-doctor-page.component';
+import { Attentionachooserecord4Component } from './modules/home/pages/pages/home-page/attentionachooserecord4/attentionachooserecord4.component';
+import { Attentionagiveservice3Component } from './modules/home/pages/pages/home-page/attentionagiveservice3/attentionagiveservice3.component';
+import { Attentionarecorddetail5Component } from './modules/home/pages/pages/home-page/attentionarecorddetail5/attentionarecorddetail5.component';
+import { Attentionassigndoctor2Component } from './modules/home/pages/pages/home-page/attentionassigndoctor2/attentionassigndoctor2.component';
+import { Attentionlaststep6Component } from './modules/home/pages/pages/home-page/attentionlaststep6/attentionlaststep6.component';
+import { Attentiontakeweight1Component } from './modules/home/pages/pages/home-page/attentiontakeweight1/attentiontakeweight1.component';
 import { HomePageComponent } from './modules/home/pages/pages/home-page/home-page.component';
+import { InicioComponent } from './modules/home/pages/pages/home-page/inicio/inicio.component';
 import { ListRecordsComponent } from './modules/home/pages/pages/records/list-records/list-records.component';
 import { OwnerProfileRecordComponent } from './modules/home/pages/pages/records/owner-profile-record/owner-profile-record.component';
 import { RecordsComponent } from './modules/home/pages/pages/records/records.component';
@@ -22,7 +29,7 @@ import { EditSettingsComponent } from './modules/home/pages/pages/settings/edit-
 import { ListSettingsComponent } from './modules/home/pages/pages/settings/list-settings/list-settings.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: '/welcome-page' },
+  { path: '', pathMatch: 'full', redirectTo: '/home-page' },
 
   {
     path: 'welcome-page',
@@ -71,6 +78,36 @@ const routes: Routes = [
       {
         path: 'home-page',
         component: HomePageComponent,
+        children: [
+          {
+            path: '',
+            component: InicioComponent,
+          },
+          {
+            path: 'take-weight',
+            component: Attentiontakeweight1Component,
+          },
+          {
+            path: 'assign-doctor',
+            component: Attentionassigndoctor2Component,
+          },
+          {
+            path: 'give-service',
+            component: Attentionagiveservice3Component,
+          },
+          {
+            path: 'choose-record',
+            component: Attentionachooserecord4Component,
+          },
+          {
+            path: 'record-detail',
+            component: Attentionarecorddetail5Component,
+          },
+          {
+            path: 'last-step',
+            component: Attentionlaststep6Component,
+          },
+        ],
       },
       {
         path: 'records',
