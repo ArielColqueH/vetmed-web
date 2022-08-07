@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class Attentionagiveservice3Component implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) {}
-
+  imageSrc = 'assets/images/gif-pawn.gif';
   ngOnInit(): void {}
   goto(link: any) {
     this.router.navigate(['home-page/' + link]);

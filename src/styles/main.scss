@@ -13,6 +13,8 @@
 @import "02-molecule/m-patient-card";
 @import "02-molecule/m-service-card";
 @import "02-molecule/m-profile-doctor";
+@import "02-molecule/m-doctor-card";
+@import "02-molecule/m-information-card";
 
 @import "03-organism/o-header";
 @import "03-organism/o-sidenav";
@@ -24,3 +26,4 @@
 @import "04-template/main";
 
 @import "05-page/p-welcome";
+@import "05-page/p-attention";

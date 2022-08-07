@@ -1,5 +1,40 @@
 <div class="p-screen">
-  <p class="a-title-page">Seleccione la atención brindada</p>
+  <p class="a-title-page">Seleccione el tipo de reporte</p>
+  <div fxLayout="row" fxLayoutAlign="center center" class="mt-32">
+    <p class="a-title-page">Seleccione la atención brindada</p>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="space-evenly center" class="mt-16">
+    <div
+      class="m-service-card m-service-card--active"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+    >
+      <div class="m-service-card__img-container mr-8">
+        <img [src]="vaccineIcon" alt="" class="m-service-card__img" />
+      </div>
+      <div class="m-service-card__text">Vacuna</div>
+    </div>
+    <div
+      class="m-service-card m-service-card--default"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+    >
+      <div class="m-service-card__img-container mr-8">
+        <img [src]="desparasitationIcon" alt="" class="m-service-card__img" />
+      </div>
+      <div class="m-service-card__text">Desparasitación</div>
+    </div>
+    <div
+      class="m-service-card m-service-card--default"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+    >
+      <div class="m-service-card__img-container mr-8">
+        <img [src]="surgeryIcon" alt="" class="m-service-card__img" />
+      </div>
+      <div class="m-service-card__text">surgeryIcon</div>
+    </div>
+  </div>
   <div fxLayout="row" fxLayoutAlign="center center" class="mt-80">
     <button
       class="m-button m-button--terciary mr-28"

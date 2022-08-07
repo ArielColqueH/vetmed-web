@@ -1,5 +1,13 @@
 <div class="p-screen">
   <p class="a-title-page">Registrar el peso de la mascota</p>
+  <div fxLayout="column" fxLayoutAlign="center center" class="mt-40">
+    <p class="a-title-page">Peso de mascota</p>
+    <mat-form-field appearance="outline" class="p-attenton__input mt-40">
+      <mat-label>Peso</mat-label>
+      <input matInput type="text" />
+      <span matSuffix class="p-attenton__input-detail">Kg</span>
+    </mat-form-field>
+  </div>
   <div fxLayout="row" fxLayoutAlign="center center" class="mt-80">
     <button class="m-button m-button--terciary mr-28" (click)="gotoback('')">
       Atras

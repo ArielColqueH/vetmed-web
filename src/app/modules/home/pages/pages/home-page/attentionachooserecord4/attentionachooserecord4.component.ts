@@ -8,7 +8,9 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class Attentionachooserecord4Component implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) {}
-
+  vaccineIcon = 'assets/images/vaccine-icon.svg';
+  desparasitationIcon = 'assets/images/desparasitation-icon.svg';
+  surgeryIcon = 'assets/images/surgery-icon.svg';
   ngOnInit(): void {}
   goto(link: any) {
     this.router.navigate(['home-page/' + link]);

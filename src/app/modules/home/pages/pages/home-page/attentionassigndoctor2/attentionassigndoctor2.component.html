@@ -1,14 +1,96 @@
 <div class="p-screen">
   <p class="a-title-page">Asignar medico</p>
-  <div fxLayout="row" fxLayoutAlign="center center" class="mt-80">
-    <button
-      class="m-button m-button--terciary mr-28"
-      (click)="goto('take-weight')"
+  <div fxLayout="row" fxLayoutAlign="center center" class="mt-40">
+    <p class="a-title-page">Seleccione el médico correspondiente</p>
+  </div>
+  <div fxLayout="row">
+    <div
+      (click)="goto('give-service')"
+      class="m-patient-card mr-20"
+      fxLayout="row"
+      fxFlex="25"
+      fxLayoutAlign="none center"
     >
+      <img
+        class="m-patient-card__img"
+        src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        alt=""
+        fxFlex="none"
+      />
+      <div class="ml-8" fxFlex="100">
+        <div class="m-patient-card__title">Nombre del veterinario</div>
+        <div class="m-patient-card__text mt-8">Jose Espinar</div>
+        <div class="m-patient-card__title mt-8">Especialidad</div>
+        <div class="m-patient-card__text mt-8">Medico General</div>
+      </div>
+    </div>
+    <div
+      (click)="goto('give-service')"
+      class="m-patient-card mr-20"
+      fxLayout="row"
+      fxFlex="25"
+      fxLayoutAlign="none center"
+    >
+      <img
+        class="m-patient-card__img"
+        src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        alt=""
+        fxFlex="none"
+      />
+      <div class="ml-8" fxFlex="100">
+        <div class="m-patient-card__title">Nombre del veterinario</div>
+        <div class="m-patient-card__text mt-8">Jose Espinar</div>
+        <div class="m-patient-card__title mt-8">Especialidad</div>
+        <div class="m-patient-card__text mt-8">Medico General</div>
+      </div>
+    </div>
+    <div
+      (click)="goto('give-service')"
+      class="m-patient-card mr-20"
+      fxLayout="row"
+      fxFlex="25"
+      fxLayoutAlign="none center"
+    >
+      <img
+        class="m-patient-card__img"
+        src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        alt=""
+        fxFlex="none"
+      />
+      <div class="ml-8" fxFlex="100">
+        <div class="m-patient-card__title">Nombre del veterinario</div>
+        <div class="m-patient-card__text mt-8">Jose Espinar</div>
+        <div class="m-patient-card__title mt-8">Especialidad</div>
+        <div class="m-patient-card__text mt-8">Medico General</div>
+      </div>
+    </div>
+    <div
+      (click)="goto('give-service')"
+      class="m-patient-card mr-20"
+      fxLayout="row"
+      fxFlex="25"
+      fxLayoutAlign="none center"
+    >
+      <img
+        class="m-patient-card__img"
+        src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        alt=""
+        fxFlex="none"
+      />
+      <div class="ml-8" fxFlex="100">
+        <div class="m-patient-card__title">Nombre del veterinario</div>
+        <div class="m-patient-card__text mt-8">Jose Espinar</div>
+        <div class="m-patient-card__title mt-8">Especialidad</div>
+        <div class="m-patient-card__text mt-8">Medico General</div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" class="mt-80">
+    <button class="m-button m-button--terciary" (click)="goto('take-weight')">
       Atras
     </button>
-    <button class="m-button m-button--primary" (click)="goto('give-service')">
+    <!-- <button class="m-button m-button--primary" >
       Siguiente
-    </button>
+    </button> -->
   </div>
 </div>

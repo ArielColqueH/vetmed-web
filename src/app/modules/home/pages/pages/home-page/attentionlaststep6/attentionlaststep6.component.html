@@ -1,6 +1,115 @@
 <div class="p-screen">
-  <p class="a-title-page">Datos para revisar</p>
-  <div fxLayout="row" fxLayoutAlign="center center" class="mt-80">
+  <p class="a-title-page">¡Ultimo paso!</p>
+  <div fxLayout="row" fxLayoutAlign="center start">
+    <div class="" fxLayout="column" fxFlex="50">
+      <div class="a-title-3-page">Médico veterinario</div>
+      <div
+        class="m-doctor-card"
+        fxLayout="row"
+        fxFlex="25"
+        fxLayoutAlign="none center"
+      >
+        <img
+          class="m-doctor-card__img"
+          src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          alt=""
+          fxFlex="none"
+        />
+        <div class="ml-8" fxFlex="100">
+          <div class="m-doctor-card__title">Nombre del veterinario</div>
+          <div class="m-doctor-card__text mt-8">Jose Espinar</div>
+        </div>
+      </div>
+
+      <div class="a-title-3-page">Datos de propietario</div>
+      <div class="m-information-card">
+        <div class="" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Propietario</div>
+          <div class="m-information-card__text">Ariel Colque Herrera</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Calle</div>
+          <div class="m-information-card__text">Jaime Zudañes</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Nro</div>
+          <div class="m-information-card__text">1167</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Zona</div>
+          <div class="m-information-card__text">Sopocachi</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Ciudad</div>
+          <div class="m-information-card__text">La Paz</div>
+        </div>
+      </div>
+      <div class="a-title-3-page">Información de la mascota</div>
+      <div class="m-information-card">
+        <div class="" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Especie</div>
+          <div class="m-information-card__text">Ariel Colque Herrera</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Raza</div>
+          <div class="m-information-card__text">Salchicha</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Sexo</div>
+          <div class="m-information-card__text">Macho</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Nombre de mascota</div>
+          <div class="m-information-card__text">Mike</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Color</div>
+          <div class="m-information-card__text">Negro Fuego</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Edad</div>
+          <div class="m-information-card__text">2 años y 6 meses</div>
+        </div>
+      </div>
+    </div>
+    <div class="ml-20" fxLayout="column" fxFlex="50">
+      <div class="a-title-3-page">Información de la vacuna</div>
+      <div class="m-information-card">
+        <div class="" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Contra</div>
+          <div class="m-information-card__text">Coronavirus</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Laboratorio</div>
+          <div class="m-information-card__text">Vanguard</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Serie</div>
+          <div class="m-information-card__text">459421</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Procedente</div>
+          <div class="m-information-card__text">USA</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Expiración</div>
+          <div class="m-information-card__text">29 / 03/ 2022</div>
+        </div>
+      </div>
+      <div class="a-title-3-page">Información de fecha de vacunación</div>
+      <div class="m-information-card">
+        <div class="" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Fecha realizada</div>
+          <div class="m-information-card__text">08/ 03/ 2022</div>
+        </div>
+        <div class="mt-8" fxLayoutAlign="space-between start">
+          <div class="m-information-card__title">Próxima fecha</div>
+          <div class="m-information-card__text">09/ 04/ 2023</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" class="mt-80 mb-40">
     <button
       class="m-button m-button--terciary mr-28"
       (click)="goto('record-detail')"

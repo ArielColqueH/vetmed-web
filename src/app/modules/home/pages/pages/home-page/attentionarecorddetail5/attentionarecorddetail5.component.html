@@ -1,6 +1,64 @@
 <div class="p-screen">
   <p class="a-title-page">Datos de desparasitación</p>
-  <div fxLayout="row" fxLayoutAlign="center center" class="mt-80">
+  <div fxLayout="row" fxLayoutAlign="start center">
+    <p class="a-title-2-page">Seleccione la atención brindada</p>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center start">
+    <div class="" fxLayout="column" fxFlex="50">
+      <mat-form-field appearance="outline">
+        <mat-label>Producto</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="mt-8">
+        <mat-label>Fecha de aplicación</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="mt-8">
+        <mat-label>Fecha de proxima dosis</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+    </div>
+    <div class="ml-20" fxLayout="column" fxFlex="50">
+      <mat-form-field appearance="outline">
+        <mat-label>Principio Activo</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="mt-8">
+        <mat-label>Via</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="start center">
+    <p class="a-title-2-page">Desparacitación externa</p>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center start">
+    <div class="" fxLayout="column" fxFlex="50">
+      <mat-form-field appearance="outline">
+        <mat-label>Producto</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="mt-8">
+        <mat-label>Fecha de aplicación</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="mt-8">
+        <mat-label>Fecha de proxima dosis</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+    </div>
+    <div class="ml-20" fxLayout="column" fxFlex="50">
+      <mat-form-field appearance="outline">
+        <mat-label>Principio Activo</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="mt-8">
+        <mat-label>Via</mat-label>
+        <input matInput type="text" />
+      </mat-form-field>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center" class="mt-80 mb-40">
     <button
       class="m-button m-button--terciary mr-28"
       (click)="goto('choose-record')"

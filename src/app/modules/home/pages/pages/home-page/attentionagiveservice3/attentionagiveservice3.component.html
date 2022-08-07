@@ -1,8 +1,14 @@
 <div class="p-screen">
   <p class="a-title-page">Brindando la atención</p>
+  <div fxLayout="row" fxLayoutAlign="center center" class="mt-32">
+    <p class="a-title-page">Espere a que se termine de brindar el servicio</p>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <img class="p-attenton__img" [src]="imageSrc" />
+  </div>
   <div fxLayout="row" fxLayoutAlign="center center" class="mt-80">
     <button
-      class="m-button m-button--terciary mr-28"
+      class="m-button m-button--terciary mr-20"
       (click)="goto('assign-doctor')"
     >
       Atras
